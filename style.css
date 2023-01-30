@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+:root{
+    --corprincipal:#87CEEB;
+    --cortitulo: #000;
+    --corsecundaria:#052051;
+    --corsegundaria:rgb(175, 238, 238);
+        
+    }
+      
+body{
+    background:rgb(175, 238, 238);
+    
+}
+    
+*{
+     margin: 0;
+     padding: 0;
+     font-family:'Roboto', sans-serif;
+ }
+    
+    
+ .cabecalho{
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+    }
+    
+    .cabecalho h1{
+        color: var(--cortitulo);
+    }
+    
+    .cabecalho img{
+        max-width:230px;
+        max-height:230px;
+        width: auto;
+        height: auto;
+    }
+    
+    .container-input{
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 0 0 4%;
+    }
+    
+    .container-input .input{
+        width: 400px;
+        height: 330px;
+    }
+    
+    #input-texto{
+        width: 345px;
+        height: 330px;
+        font-size: 20px;
+        color: var(--cortitulo);
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        resize: none;
+        outline: 0;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    
+    
+    #output{
+        display: flex;
+        flex-direction: column;
+        border: 3px solid var(--cortitulo);
+        border-radius: 20px;
+        width: 350px;
+        height: 430px;
+        margin-right: 3%;
+    }
+    
+    #output h2{
+        text-align: center;
+        font-size: 25px;
+        color: var(--cortitulo);
+    }
+    
+    #output span{
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    #output img{
+        max-width:300px;
+        max-height:300px; 
+        margin-left:30px;
+        width:100%;
+        height:100%;      
+        margin-top: 4%;
+    }
+    
+    .container-btn button{
+        border: 2px solid var(--cortitulo);
+        border-radius: 10px;
+        text-decoration: none;
+        color: #6495ED;
+        width: 150px;
+        height: 50px;
+        margin-left: 4%;
+        cursor: pointer;
+    }
+    
+    .btn-copiar{
+        border: 2px solid var(--cortitulo);
+        border-radius: 10px;
+        text-decoration: none;
+        color: #6495ED;
+        width: 150px;
+        height: 50px;
+        margin-bottom: 10%;
+        margin-left: 30%;
+        cursor: pointer;
+    }
+    
+    .container-btn button:hover{
+       border: 2px solid rgb(175, 238, 238);
+       transition: 0.5s all;
+    }
+    
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 45px;
+        margin-top: 120px ;
+        background:var(--corprincipal) ;
+        color: var(--cortitulo);
+    }
+    
+    .rodape h3{
+        font-size: 16px;
+    }
+    
+    .icons ion-icon{
+        width: 25px;
+        height: 25px;
+        color: var(--cortitulo);
+    }
+    
+    .icons ion-icon:hover{
+        color: var(--corsegundaria);
+    }
+    
